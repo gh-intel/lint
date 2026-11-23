@@ -135,8 +135,8 @@ jobs:
 ### Detection Result
 
 ```
-script/actions/advisory/GHSA-8v8w-v8xg-79rf-vulnerable.yaml:23:26: code injection (critical): "github.head_ref" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
-script/actions/advisory/GHSA-8v8w-v8xg-79rf-vulnerable.yaml:34:32: code injection (critical): "github.head_ref" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
+script/actions/advisory/GHSA-8v8w-v8xg-79rf-vulnerable.yaml:23:26: code injection (critical): "github.head_ref" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
+script/actions/advisory/GHSA-8v8w-v8xg-79rf-vulnerable.yaml:34:32: code injection (critical): "github.head_ref" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
 ```
 
 ### Analysis

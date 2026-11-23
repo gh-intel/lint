@@ -156,10 +156,10 @@ jobs:
 ### Detection Result
 
 ```
-script/actions/advisory/GHSA-f9qj-7gh3-mhj4-vulnerable.yaml:23:16: checking out untrusted code from pull request in workflow with privileged trigger 'pull_request_target' (line 10). This allows potentially malicious code from external contributors to execute with access to repository secrets. Use 'pull_request' trigger instead, or avoid checking out PR code when using 'pull_request_target'. See https://sisaku-security.github.io/lint/docs/rules/untrustedcheckout/ for more details [untrusted-checkout]
-script/actions/advisory/GHSA-f9qj-7gh3-mhj4-vulnerable.yaml:32:24: code injection (critical): "github.event.pull_request.title" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
-script/actions/advisory/GHSA-f9qj-7gh3-mhj4-vulnerable.yaml:33:23: code injection (critical): "github.event.pull_request.body" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
-script/actions/advisory/GHSA-f9qj-7gh3-mhj4-vulnerable.yaml:45:48: code injection (critical): "github.event.pull_request.title" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
+script/actions/advisory/GHSA-f9qj-7gh3-mhj4-vulnerable.yaml:23:16: checking out untrusted code from pull request in workflow with privileged trigger 'pull_request_target' (line 10). This allows potentially malicious code from external contributors to execute with access to repository secrets. Use 'pull_request' trigger instead, or avoid checking out PR code when using 'pull_request_target'. See https://gh-intel.github.io/lint/docs/rules/untrustedcheckout/ for more details [untrusted-checkout]
+script/actions/advisory/GHSA-f9qj-7gh3-mhj4-vulnerable.yaml:32:24: code injection (critical): "github.event.pull_request.title" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
+script/actions/advisory/GHSA-f9qj-7gh3-mhj4-vulnerable.yaml:33:23: code injection (critical): "github.event.pull_request.body" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
+script/actions/advisory/GHSA-f9qj-7gh3-mhj4-vulnerable.yaml:45:48: code injection (critical): "github.event.pull_request.title" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
 ```
 
 ### Analysis
@@ -178,8 +178,8 @@ sisakulint successfully detected all code injection vulnerabilities:
 The detection correctly identifies these as **critical** vulnerabilities because they occur in a workflow with `pull_request_target` trigger, which grants elevated privileges and access to secrets.
 
 Test files:
-- Vulnerable: `/Users/atsushi.sada/go/src/github.com/sisaku-security/sisakulint/script/actions/advisory/GHSA-f9qj-7gh3-mhj4-vulnerable.yaml`
-- Safe: `/Users/atsushi.sada/go/src/github.com/sisaku-security/sisakulint/script/actions/advisory/GHSA-f9qj-7gh3-mhj4-safe.yaml`
+- Vulnerable: `/Users/atsushi.sada/go/src/github.com/gh-intel/sisakulint/script/actions/advisory/GHSA-f9qj-7gh3-mhj4-vulnerable.yaml`
+- Safe: `/Users/atsushi.sada/go/src/github.com/gh-intel/sisakulint/script/actions/advisory/GHSA-f9qj-7gh3-mhj4-safe.yaml`
 
 ### Verification Command
 

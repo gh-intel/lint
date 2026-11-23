@@ -93,8 +93,8 @@ jobs:
 ## sisakulint Detection Result
 
 ```
-script/actions/advisory/GHSA-qmg3-hpqr-gqvc-vulnerable.yaml:15:9: the action ref in 'uses' for step '<unnamed>' should be a full length commit SHA for immutability and security. See https://sisaku-security.github.io/lint/docs/rules/commitsharule/ [commit-sha]
-script/actions/advisory/GHSA-qmg3-hpqr-gqvc-vulnerable.yaml:19:9: the action ref in 'uses' for step '<unnamed>' should be a full length commit SHA for immutability and security. See https://sisaku-security.github.io/lint/docs/rules/commitsharule/ [commit-sha]
+script/actions/advisory/GHSA-qmg3-hpqr-gqvc-vulnerable.yaml:15:9: the action ref in 'uses' for step '<unnamed>' should be a full length commit SHA for immutability and security. See https://gh-intel.github.io/lint/docs/rules/commitsharule/ [commit-sha]
+script/actions/advisory/GHSA-qmg3-hpqr-gqvc-vulnerable.yaml:19:9: the action ref in 'uses' for step '<unnamed>' should be a full length commit SHA for immutability and security. See https://gh-intel.github.io/lint/docs/rules/commitsharule/ [commit-sha]
 ```
 
 ### Analysis

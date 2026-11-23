@@ -90,7 +90,7 @@ These Terms shall be governed by and construed in accordance with applicable ope
 ## Contact
 
 For questions about these Terms, please:
-- Open an issue at [https://github.com/sisaku-security/sisakulint-agent/issues](https://github.com/sisaku-security/sisakulint-agent/issues)
+- Open an issue at [https://github.com/gh-intel/sisakulint-agent/issues](https://github.com/gh-intel/sisakulint-agent/issues)
 
 ## Acknowledgments
 

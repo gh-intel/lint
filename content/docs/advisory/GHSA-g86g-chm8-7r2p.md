@@ -178,7 +178,7 @@ This vulnerability **IS detectable** by static analysis because it involves:
 ### sisakulint Detection Result
 
 ```
-script/actions/advisory/GHSA-g86g-chm8-7r2p-vulnerable.yaml:13:3: dangerous trigger (critical): workflow uses privileged trigger(s) [pull_request_target] without any security mitigations. These triggers grant write access and secrets access to potentially untrusted code. Add at least one mitigation: restrict permissions (permissions: read-all or permissions: {}), use environment protection, add label conditions, or check github.actor. See https://sisaku-security.github.io/lint/docs/rules/dangeroustriggersrulecritical/ [dangerous-triggers-critical]
+script/actions/advisory/GHSA-g86g-chm8-7r2p-vulnerable.yaml:13:3: dangerous trigger (critical): workflow uses privileged trigger(s) [pull_request_target] without any security mitigations. These triggers grant write access and secrets access to potentially untrusted code. Add at least one mitigation: restrict permissions (permissions: read-all or permissions: {}), use environment protection, add label conditions, or check github.actor. See https://gh-intel.github.io/lint/docs/rules/dangeroustriggersrulecritical/ [dangerous-triggers-critical]
 script/actions/advisory/GHSA-g86g-chm8-7r2p-vulnerable.yaml:30:9: Action 'check-spelling/check-spelling@v0.0.18' has a known critical severity vulnerability (GHSA-g86g-chm8-7r2p): check-spelling workflow vulnerable to token leakage via symlink attack. Upgrade to version 0.0.19 or later. See: https://github.com/advisories/GHSA-g86g-chm8-7r2p [known-vulnerable-actions]
 ```
 

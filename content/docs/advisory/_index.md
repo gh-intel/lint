@@ -149,5 +149,5 @@ sisakulint script/actions/advisory/*-safe.yaml
 ## References
 
 - [GitHub Security Advisories (Actions)](https://github.com/advisories?query=ecosystem%3Aactions)
-- [sisakulint Documentation](https://sisaku-security.github.io/lint/)
+- [sisakulint Documentation](https://gh-intel.github.io/lint/)
 - [OWASP Top 10 CI/CD Security Risks](https://owasp.org/www-project-top-10-ci-cd-security-risks/)

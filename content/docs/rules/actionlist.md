@@ -3,7 +3,7 @@ title: "Action List Rule"
 weight: 1
 ---
 
-This page describes sisakulint [v0.3.6](https://github.com/sisaku-security/sisakulint/releases/tag/v0.3.6).
+This page describes sisakulint [v0.3.6](https://github.com/gh-intel/sisakulint/releases/tag/v0.3.6).
 
 ## Overview
 
@@ -290,4 +290,4 @@ ongoing usage, deprovisioning). A list held in one repository covers part of the
 - [OWASP: CICD-SEC-03 - Dependency Chain Abuse](https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-03-Dependency-Chain-Abuse)
 - [OWASP: CICD-SEC-08 - Ungoverned Usage of 3rd Party Services](https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-08-Ungoverned-Usage-of-3rd-Party-Services)
 - [StepSecurity: our Black Hat 2025 presentation on the tj-actions supply chain breach](https://www.stepsecurity.io/blog/when-changed-files-changed-everything-our-black-hat-2025-presentation-on-the-tj-actions-supply-chain-breach)
-- [Rule source (`v0.3.6`)](https://github.com/sisaku-security/sisakulint/blob/v0.3.6/pkg/core/actionlist.go)
+- [Rule source (`v0.3.6`)](https://github.com/gh-intel/sisakulint/blob/v0.3.6/pkg/core/actionlist.go)

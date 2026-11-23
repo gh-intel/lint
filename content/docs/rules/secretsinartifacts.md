@@ -57,7 +57,7 @@ Actions using **SHA commits** or **branch names** are not analyzed:
 
 This limitation is by design for **simplicity** and **offline operation**.
 
-**Future Enhancement**: GitHub API integration to resolve SHA/branch versions is tracked in [issue #297](https://github.com/sisaku-security/sisakulint/issues/297).
+**Future Enhancement**: GitHub API integration to resolve SHA/branch versions is tracked in [issue #297](https://github.com/gh-intel/sisakulint/issues/297).
 
 ### Example Vulnerable Workflows
 
@@ -261,7 +261,7 @@ The rule also detects uploads of:
 - [CodeQL Query: actions-secrets-in-artifacts](https://codeql.github.com/codeql-query-help/actions/actions-secrets-in-artifacts/)
 - [CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)
 - [GitHub Actions: upload-artifact v4 Changes](https://github.blog/changelog/2024-02-12-deprecation-notice-v3-of-the-artifact-actions/)
-- [Issue #297: Enhancement for SHA/branch version detection](https://github.com/sisaku-security/sisakulint/issues/297)
+- [Issue #297: Enhancement for SHA/branch version detection](https://github.com/gh-intel/sisakulint/issues/297)
 
 ### Related Rules
 

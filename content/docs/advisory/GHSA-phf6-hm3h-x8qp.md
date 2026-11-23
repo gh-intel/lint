@@ -135,8 +135,8 @@ $ sisakulint script/actions/advisory/GHSA-phf6-hm3h-x8qp-vulnerable.yaml
 
 Actual output:
 ```
-script/actions/advisory/GHSA-phf6-hm3h-x8qp-vulnerable.yaml:31:21: code injection (critical): "github.event.comment.body" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
-script/actions/advisory/GHSA-phf6-hm3h-x8qp-vulnerable.yaml:42:32: code injection (critical): "github.event.comment.body" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
+script/actions/advisory/GHSA-phf6-hm3h-x8qp-vulnerable.yaml:31:21: code injection (critical): "github.event.comment.body" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
+script/actions/advisory/GHSA-phf6-hm3h-x8qp-vulnerable.yaml:42:32: code injection (critical): "github.event.comment.body" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
 ```
 
 ### Analysis

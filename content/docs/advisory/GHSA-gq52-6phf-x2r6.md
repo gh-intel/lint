@@ -127,7 +127,7 @@ jobs:
 ### sisakulint Detection Result
 
 ```
-script/actions/advisory/GHSA-gq52-6phf-x2r6-vulnerable.yaml:25:24: code injection (critical): "github.head_ref" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
+script/actions/advisory/GHSA-gq52-6phf-x2r6-vulnerable.yaml:25:24: code injection (critical): "github.head_ref" is potentially untrusted and used in a workflow with privileged triggers. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectioncritical/ [code-injection-critical]
 ```
 
 ### Analysis

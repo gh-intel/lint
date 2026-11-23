@@ -6,7 +6,7 @@ aliases:
   - /docs/rules/envvarinjectionmedium/
 ---
 
-This page describes sisakulint [v0.3.6](https://github.com/sisaku-security/sisakulint/releases/tag/v0.3.6).
+This page describes sisakulint [v0.3.6](https://github.com/gh-intel/sisakulint/releases/tag/v0.3.6).
 
 ## Overview
 
@@ -183,7 +183,7 @@ jobs:
 ## Example Output
 
 ```bash
-.github/workflows/w.yml:12:14: environment variable injection (critical): "github.event.pull_request.title" is potentially untrusted and written to $GITHUB_ENV in a workflow with privileged triggers. This can allow attackers to inject additional environment variables. Use heredoc syntax with unique delimiters or sanitize the input with 'tr -d '\n''. See https://sisaku-security.github.io/lint/docs/rules/envvarinjectioncritical/ [envvar-injection-critical]
+.github/workflows/w.yml:12:14: environment variable injection (critical): "github.event.pull_request.title" is potentially untrusted and written to $GITHUB_ENV in a workflow with privileged triggers. This can allow attackers to inject additional environment variables. Use heredoc syntax with unique delimiters or sanitize the input with 'tr -d '\n''. See https://gh-intel.github.io/lint/docs/rules/envvarinjectioncritical/ [envvar-injection-critical]
        12 👈|      - run: echo "PR_TITLE=${{ github.event.pull_request.title }}" >> "$GITHUB_ENV"
 ```
 
@@ -192,7 +192,7 @@ four places — the word in the message, the clause naming the trigger, the slug
 the rule name in brackets:
 
 ```bash
-.github/workflows/w.yml:12:14: environment variable injection (medium): "github.event.pull_request.title" is potentially untrusted and written to $GITHUB_ENV. This can allow attackers to inject additional environment variables. Use heredoc syntax with unique delimiters or sanitize the input with 'tr -d '\n''. See https://sisaku-security.github.io/lint/docs/rules/envvarinjectionmedium/ [envvar-injection-medium]
+.github/workflows/w.yml:12:14: environment variable injection (medium): "github.event.pull_request.title" is potentially untrusted and written to $GITHUB_ENV. This can allow attackers to inject additional environment variables. Use heredoc syntax with unique delimiters or sanitize the input with 'tr -d '\n''. See https://gh-intel.github.io/lint/docs/rules/envvarinjectionmedium/ [envvar-injection-medium]
        12 👈|      - run: echo "PR_TITLE=${{ github.event.pull_request.title }}" >> "$GITHUB_ENV"
 ```
 
@@ -324,11 +324,11 @@ reports.
 - [CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)
 - [OWASP: Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
 - [OWASP CICD-SEC-04: Poisoned Pipeline Execution](https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-04-Poisoned-Pipeline-Execution)
-- [Rule implementation](https://github.com/sisaku-security/sisakulint/blob/dea1408b296a54edc30206ee844daf5ea185b79e/pkg/core/envvarinjection.go)
-- [Trigger analysis](https://github.com/sisaku-security/sisakulint/blob/dea1408b296a54edc30206ee844daf5ea185b79e/pkg/core/job_trigger_analyzer.go): the job-level `if:` that `code-injection`
+- [Rule implementation](https://github.com/gh-intel/sisakulint/blob/dea1408b296a54edc30206ee844daf5ea185b79e/pkg/core/envvarinjection.go)
+- [Trigger analysis](https://github.com/gh-intel/sisakulint/blob/dea1408b296a54edc30206ee844daf5ea185b79e/pkg/core/job_trigger_analyzer.go): the job-level `if:` that `code-injection`
   reads and this rule does not
-- [Linter](https://github.com/sisaku-security/sisakulint/blob/dea1408b296a54edc30206ee844daf5ea185b79e/pkg/core/linter.go#L900-L950): fixers are collected in rule order, and `-ignore` is matched
+- [Linter](https://github.com/gh-intel/sisakulint/blob/dea1408b296a54edc30206ee844daf5ea185b79e/pkg/core/linter.go#L900-L950): fixers are collected in rule order, and `-ignore` is matched
   against the rule name rather than the message
-- [`secret-in-log` implementation](https://github.com/sisaku-security/sisakulint/blob/dea1408b296a54edc30206ee844daf5ea185b79e/pkg/core/secretinlog.go): the bash abstract syntax tree it walks
-- [Command-line flags](https://github.com/sisaku-security/sisakulint/blob/dea1408b296a54edc30206ee844daf5ea185b79e/pkg/core/command.go#L248): the `-ignore` flag, whose help text says it matches error
+- [`secret-in-log` implementation](https://github.com/gh-intel/sisakulint/blob/dea1408b296a54edc30206ee844daf5ea185b79e/pkg/core/secretinlog.go): the bash abstract syntax tree it walks
+- [Command-line flags](https://github.com/gh-intel/sisakulint/blob/dea1408b296a54edc30206ee844daf5ea185b79e/pkg/core/command.go#L248): the `-ignore` flag, whose help text says it matches error
   messages

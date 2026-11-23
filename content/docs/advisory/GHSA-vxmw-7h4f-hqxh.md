@@ -79,8 +79,8 @@ jobs:
 ## sisakulint Detection Result
 
 ```
-script/actions/advisory/GHSA-vxmw-7h4f-hqxh-vulnerable.yaml:9:3: dangerous trigger (critical): workflow uses privileged trigger(s) [pull_request_target] without any security mitigations. These triggers grant write access and secrets access to potentially untrusted code. Add at least one mitigation: restrict permissions (permissions: read-all or permissions: {}), use environment protection, add label conditions, or check github.actor. See https://sisaku-security.github.io/lint/docs/rules/dangeroustriggersrulecritical/ [dangerous-triggers-critical]
-script/actions/advisory/GHSA-vxmw-7h4f-hqxh-vulnerable.yaml:17:16: checking out untrusted code from pull request in workflow with privileged trigger 'pull_request_target' (line 9). This allows potentially malicious code from external contributors to execute with access to repository secrets. Use 'pull_request' trigger instead, or avoid checking out PR code when using 'pull_request_target'. See https://sisaku-security.github.io/lint/docs/rules/untrustedcheckout/ for more details [untrusted-checkout]
+script/actions/advisory/GHSA-vxmw-7h4f-hqxh-vulnerable.yaml:9:3: dangerous trigger (critical): workflow uses privileged trigger(s) [pull_request_target] without any security mitigations. These triggers grant write access and secrets access to potentially untrusted code. Add at least one mitigation: restrict permissions (permissions: read-all or permissions: {}), use environment protection, add label conditions, or check github.actor. See https://gh-intel.github.io/lint/docs/rules/dangeroustriggersrulecritical/ [dangerous-triggers-critical]
+script/actions/advisory/GHSA-vxmw-7h4f-hqxh-vulnerable.yaml:17:16: checking out untrusted code from pull request in workflow with privileged trigger 'pull_request_target' (line 9). This allows potentially malicious code from external contributors to execute with access to repository secrets. Use 'pull_request' trigger instead, or avoid checking out PR code when using 'pull_request_target'. See https://gh-intel.github.io/lint/docs/rules/untrustedcheckout/ for more details [untrusted-checkout]
 ```
 
 ### Analysis

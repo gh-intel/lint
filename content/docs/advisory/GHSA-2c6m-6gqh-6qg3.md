@@ -78,7 +78,7 @@ The command injection would execute during container startup, before any workflo
 ### Detection Result
 
 ```
-script/actions/advisory/GHSA-2c6m-6gqh-6qg3-vulnerable.yaml:9:3: dangerous trigger (critical): workflow uses privileged trigger(s) [pull_request_target] without any security mitigations. These triggers grant write access and secrets access to potentially untrusted code. Add at least one mitigation: restrict permissions (permissions: read-all or permissions: {}), use environment protection, add label conditions, or check github.actor. See https://sisaku-security.github.io/lint/docs/rules/dangeroustriggersrulecritical/ [dangerous-triggers-critical]
+script/actions/advisory/GHSA-2c6m-6gqh-6qg3-vulnerable.yaml:9:3: dangerous trigger (critical): workflow uses privileged trigger(s) [pull_request_target] without any security mitigations. These triggers grant write access and secrets access to potentially untrusted code. Add at least one mitigation: restrict permissions (permissions: read-all or permissions: {}), use environment protection, add label conditions, or check github.actor. See https://gh-intel.github.io/lint/docs/rules/dangeroustriggersrulecritical/ [dangerous-triggers-critical]
 script/actions/advisory/GHSA-2c6m-6gqh-6qg3-vulnerable.yaml:17:14: container image 'node:18' in container of job 'vulnerable' is using a tag without SHA256 digest. Tags are mutable and can be overwritten. Consider pinning with SHA256 digest (e.g., node:18@sha256:...). [unpinned-images]
 ```
 
