@@ -174,8 +174,8 @@ sisakulint did not detect the command injection pattern through filenames, which
 4. The values that step outputs will have are unpredictable through static analysis
 
 Test files:
-- Vulnerable: `/Users/atsushi.sada/go/src/github.com/sisaku-security/sisakulint/script/actions/advisory/GHSA-mcph-m25j-8j63-vulnerable.yaml`
-- Safe: `/Users/atsushi.sada/go/src/github.com/sisaku-security/sisakulint/script/actions/advisory/GHSA-mcph-m25j-8j63-safe.yaml`
+- Vulnerable: `/Users/atsushi.sada/go/src/github.com/gh-intel/sisakulint/script/actions/advisory/GHSA-mcph-m25j-8j63-vulnerable.yaml`
+- Safe: `/Users/atsushi.sada/go/src/github.com/gh-intel/sisakulint/script/actions/advisory/GHSA-mcph-m25j-8j63-safe.yaml`
 
 ### Verification Command
 

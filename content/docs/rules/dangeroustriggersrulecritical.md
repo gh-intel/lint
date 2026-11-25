@@ -75,7 +75,7 @@ jobs:
 ```bash
 $ sisakulint .github/workflows/deploy.yaml
 
-.github/workflows/deploy.yaml:3:3: dangerous trigger (critical): workflow uses privileged trigger(s) [issue_comment] without any security mitigations. These triggers grant write access and secrets access to potentially untrusted code. Add at least one mitigation: restrict permissions (permissions: read-all or permissions: {}), use environment protection, add label conditions, or check github.actor. See https://sisaku-security.github.io/lint/docs/rules/dangeroustriggersrulecritical/ [dangerous-triggers-critical]
+.github/workflows/deploy.yaml:3:3: dangerous trigger (critical): workflow uses privileged trigger(s) [issue_comment] without any security mitigations. These triggers grant write access and secrets access to potentially untrusted code. Add at least one mitigation: restrict permissions (permissions: read-all or permissions: {}), use environment protection, add label conditions, or check github.actor. See https://gh-intel.github.io/lint/docs/rules/dangeroustriggersrulecritical/ [dangerous-triggers-critical]
 ```
 
 ### Secure Alternatives

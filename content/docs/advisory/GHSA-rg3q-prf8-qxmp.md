@@ -83,10 +83,10 @@ jobs:
 ## sisakulint Detection Result
 
 ```
-script/actions/advisory/GHSA-rg3q-prf8-qxmp-vulnerable.yaml:26:24: code injection (medium): "github.event.pull_request.title" is potentially untrusted. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectionmedium/ [code-injection-medium]
-script/actions/advisory/GHSA-rg3q-prf8-qxmp-vulnerable.yaml:40:37: code injection (medium): "github.event.pull_request.title" is potentially untrusted. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectionmedium/ [code-injection-medium]
+script/actions/advisory/GHSA-rg3q-prf8-qxmp-vulnerable.yaml:26:24: code injection (medium): "github.event.pull_request.title" is potentially untrusted. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectionmedium/ [code-injection-medium]
+script/actions/advisory/GHSA-rg3q-prf8-qxmp-vulnerable.yaml:40:37: code injection (medium): "github.event.pull_request.title" is potentially untrusted. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectionmedium/ [code-injection-medium]
 script/actions/advisory/GHSA-rg3q-prf8-qxmp-vulnerable.yaml:40:37: argument injection (medium): "github.event.pull_request.title" is potentially untrusted and used as command-line argument to 'gh'. Attackers can inject malicious options (e.g., --output=/etc/passwd). Use '--' to end option parsing or pass through environment variables. See https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions [argument-injection-medium]
-script/actions/advisory/GHSA-rg3q-prf8-qxmp-vulnerable.yaml:47:33: code injection (medium): "github.event.pull_request.title" is potentially untrusted. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://sisaku-security.github.io/lint/docs/rules/codeinjectionmedium/ [code-injection-medium]
+script/actions/advisory/GHSA-rg3q-prf8-qxmp-vulnerable.yaml:47:33: code injection (medium): "github.event.pull_request.title" is potentially untrusted. Avoid using it directly in inline scripts. Instead, pass it through an environment variable. See https://gh-intel.github.io/lint/docs/rules/codeinjectionmedium/ [code-injection-medium]
 ```
 
 ### Analysis

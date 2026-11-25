@@ -66,7 +66,7 @@ jobs:
 ## sisakulint Detection Result
 
 ```
-script/actions/advisory/GHSA-pwf7-47c3-mfhx-vulnerable.yaml:26:16: checking out untrusted code from pull request in workflow with privileged trigger 'pull_request_target' (line 12). This allows potentially malicious code from external contributors to execute with access to repository secrets. Use 'pull_request' trigger instead, or avoid checking out PR code when using 'pull_request_target'. See https://sisaku-security.github.io/lint/docs/rules/untrustedcheckout/ for more details [untrusted-checkout]
+script/actions/advisory/GHSA-pwf7-47c3-mfhx-vulnerable.yaml:26:16: checking out untrusted code from pull request in workflow with privileged trigger 'pull_request_target' (line 12). This allows potentially malicious code from external contributors to execute with access to repository secrets. Use 'pull_request' trigger instead, or avoid checking out PR code when using 'pull_request_target'. See https://gh-intel.github.io/lint/docs/rules/untrustedcheckout/ for more details [untrusted-checkout]
 script/actions/advisory/GHSA-pwf7-47c3-mfhx-vulnerable.yaml:29:9: Action 'j178/prek-action@v0.2.0' has a known critical severity vulnerability (GHSA-pwf7-47c3-mfhx): j178/prek-action vulnerable to arbitrary code injection in composite action. Upgrade to version 1.0.6 or later. See: https://github.com/advisories/GHSA-pwf7-47c3-mfhx [known-vulnerable-actions]
 ```
 

@@ -3,7 +3,7 @@ title: "Self-Hosted Runners Rule"
 weight: 1
 ---
 
-This page describes sisakulint [v0.3.6](https://github.com/sisaku-security/sisakulint/releases/tag/v0.3.6).
+This page describes sisakulint [v0.3.6](https://github.com/gh-intel/sisakulint/releases/tag/v0.3.6).
 
 ## Overview
 
@@ -87,7 +87,7 @@ jobs:
 ## Example Output
 
 ```bash
-.github/workflows/build.yaml:11:14: job "build" uses self-hosted runner (direct label specification). Self-hosted runners are dangerous in public repositories because they can persist state between workflow runs and allow arbitrary code execution from pull requests. Consider using GitHub-hosted runners or ephemeral self-hosted runners. See https://sisaku-security.github.io/lint/docs/rules/selfhostedrunners/ [self-hosted-runner]
+.github/workflows/build.yaml:11:14: job "build" uses self-hosted runner (direct label specification). Self-hosted runners are dangerous in public repositories because they can persist state between workflow runs and allow arbitrary code execution from pull requests. Consider using GitHub-hosted runners or ephemeral self-hosted runners. See https://gh-intel.github.io/lint/docs/rules/selfhostedrunners/ [self-hosted-runner]
        11 👈|    runs-on: self-hosted
 ```
 
@@ -190,4 +190,4 @@ covers all of them.
 - [CWE-269: Improper Privilege Management](https://cwe.mitre.org/data/definitions/269.html)
 - [OWASP CICD-SEC-1: Insufficient Flow Control Mechanisms](https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-01-Insufficient-Flow-Control-Mechanisms)
 - [OWASP CICD-SEC-7: Insecure System Configuration](https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-07-Insecure-System-Configuration)
-- [Rule source (`v0.3.6`)](https://github.com/sisaku-security/sisakulint/blob/v0.3.6/pkg/core/selfhostedrunnersrule.go)
+- [Rule source (`v0.3.6`)](https://github.com/gh-intel/sisakulint/blob/v0.3.6/pkg/core/selfhostedrunnersrule.go)

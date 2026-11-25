@@ -44,7 +44,7 @@ GitHub Actions masks `${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}` but has no knowled
 workflow.yaml:29:24: secret in log: variable $PRIVATE_KEY (origin: shellvar:GCP_SERVICE_ACCOUNT_KEY) is printed via 'echo' without masking.
 GitHub Actions only masks direct secrets.* values; values derived via shell expansion or tools like jq are not masked and will appear in plaintext in build logs.
 Add 'echo "::add-mask::$PRIVATE_KEY"' before any usage, or avoid printing the value.
-See https://sisaku-security.github.io/lint/docs/rules/secretinlogrule/ [secret-in-log]
+See https://gh-intel.github.io/lint/docs/rules/secretinlogrule/ [secret-in-log]
 ```
 
 ### Safe Pattern

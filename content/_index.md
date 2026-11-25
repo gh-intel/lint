@@ -8,16 +8,16 @@ draft = false
 
 **50+ security rules. 38+ auto-fixes. Taint propagation. 100% detection on GitHub Security Lab advisories.**
 
-{{< figure src="https://github.com/sisaku-security/homebrew-sisakulint/assets/67861004/e9801cbb-fbe1-4822-a5cd-d1daac33e90f" alt="sisakulint logo" width="300px" >}}
+{{< figure src="https://github.com/gh-intel/homebrew-sisakulint/assets/67861004/e9801cbb-fbe1-4822-a5cd-d1daac33e90f" alt="sisakulint logo" width="300px" >}}
 
 ```bash
-$ brew tap sisaku-security/homebrew-sisakulint
+$ brew tap gh-intel/homebrew-sisakulint
 $ brew install sisakulint
 ```
 
 {{< youtube id="DhgqKOmzLSk" title="sisakulint Demo" >}}
 
-{{< popup_link2 href=https://github.com/sisaku-security/sisakulint >}}
+{{< popup_link2 href=https://github.com/gh-intel/sisakulint >}}
 ---
 
 ## What is sisakulint?
@@ -167,13 +167,13 @@ It is important to distinguish two levels of automated fixing in security toolin
 ### macOS
 
 ```bash
-$ brew tap sisaku-security/homebrew-sisakulint
+$ brew tap gh-intel/homebrew-sisakulint
 $ brew install sisakulint
 ```
 
 ### Linux
 
-Download from the [release page](https://github.com/sisaku-security/sisakulint/releases):
+Download from the [release page](https://github.com/gh-intel/sisakulint/releases):
 
 ```bash
 $ cd <directory where sisakulint binary is located>
@@ -258,9 +258,9 @@ sisakulint automatically searches for YAML files in the `.github/workflows` dire
 
 ## Links
 
-- [GitHub Repository](https://github.com/sisaku-security/sisakulint)
+- [GitHub Repository](https://github.com/gh-intel/sisakulint)
 - [Demo Video](https://www.youtube.com/watch?v=DhgqKOmzLSk)
 - [Presentation (BlackHat Asia 2025)](https://speakerdeck.com/4su_para/sisakulint-ci-friendly-static-linter-with-sast-semantic-analysis-for-github-actions)
 - [Poster](https://sechack365.nict.go.jp/achievement/2023/pdf/14C.pdf)
 
-{{< popup_link2 href=https://github.com/sisaku-security/sisakulint >}}
+{{< popup_link2 href=https://github.com/gh-intel/sisakulint >}}

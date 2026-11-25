@@ -3,7 +3,7 @@ title: "Artifact Poisoning Rule（Critical）"
 weight: 8
 ---
 
-This page describes sisakulint [v0.3.7](https://github.com/sisaku-security/sisakulint/releases/tag/v0.3.7).
+This page describes sisakulint [v0.3.7](https://github.com/gh-intel/sisakulint/releases/tag/v0.3.7).
 
 ## Overview
 
@@ -146,7 +146,7 @@ jobs:
 ## Example Output
 
 ```bash
-.github/workflows/deploy.yaml:19:9: artifact is downloaded without specifying a safe extraction path at step "Download build artifacts". This may allow artifact poisoning where malicious files overwrite existing files. Consider extracting to a temporary folder like '${{ runner.temp }}/artifacts' to prevent overwriting existing files. See https://sisaku-security.github.io/lint/docs/rules/artifactpoisoningcritical/ [artifact-poisoning-critical]
+.github/workflows/deploy.yaml:19:9: artifact is downloaded without specifying a safe extraction path at step "Download build artifacts". This may allow artifact poisoning where malicious files overwrite existing files. Consider extracting to a temporary folder like '${{ runner.temp }}/artifacts' to prevent overwriting existing files. See https://gh-intel.github.io/lint/docs/rules/artifactpoisoningcritical/ [artifact-poisoning-critical]
        19 👈|      - name: Download build artifacts
 ```
 
@@ -327,4 +327,4 @@ available, it removes the risk rather than relocating it.
   — what a build attestation establishes and what it does not. It links an artifact to the source
   and the build instructions that produced it; GitHub states it is not a guarantee that the
   artifact is secure, and leaves the policy criteria to the consumer
-- [Rule source (`v0.3.7`)](https://github.com/sisaku-security/sisakulint/blob/v0.3.7/pkg/core/artifactpoisoningcritical.go)
+- [Rule source (`v0.3.7`)](https://github.com/gh-intel/sisakulint/blob/v0.3.7/pkg/core/artifactpoisoningcritical.go)

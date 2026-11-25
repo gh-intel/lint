@@ -109,7 +109,7 @@ jobs:
 ## sisakulint Detection Result
 
 ```
-script/actions/advisory/GHSA-cxww-7g56-2vh6-vulnerable.yaml:20:9: artifact is downloaded to an unsafe path "./artifacts" at step "<unnamed>". Workspace-relative paths allow malicious artifacts to overwrite source code, scripts, or dependencies, creating a critical supply chain vulnerability. Extract to '${{ runner.temp }}/artifacts' instead. See https://sisaku-security.github.io/lint/docs/rules/artifactpoisoningcritical/ [artifact-poisoning-critical]
+script/actions/advisory/GHSA-cxww-7g56-2vh6-vulnerable.yaml:20:9: artifact is downloaded to an unsafe path "./artifacts" at step "<unnamed>". Workspace-relative paths allow malicious artifacts to overwrite source code, scripts, or dependencies, creating a critical supply chain vulnerability. Extract to '${{ runner.temp }}/artifacts' instead. See https://gh-intel.github.io/lint/docs/rules/artifactpoisoningcritical/ [artifact-poisoning-critical]
 script/actions/advisory/GHSA-cxww-7g56-2vh6-vulnerable.yaml:20:9: Action 'actions/download-artifact@v4.1.2' has a known high severity vulnerability (GHSA-cxww-7g56-2vh6): @actions/download-artifact has an Arbitrary File Write via artifact extraction. Upgrade to version 4.1.3 or later. See: https://github.com/advisories/GHSA-cxww-7g56-2vh6 [known-vulnerable-actions]
 ```
 

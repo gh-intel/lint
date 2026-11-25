@@ -147,7 +147,7 @@ jobs:
 ### sisakulint Detection Result
 
 ```
-script/actions/advisory/GHSA-ghm2-rq8q-wrhc-vulnerable.yaml:23:16: checking out untrusted code from pull request in workflow with privileged trigger 'pull_request_target' (line 10). This allows potentially malicious code from external contributors to execute with access to repository secrets. Use 'pull_request' trigger instead, or avoid checking out PR code when using 'pull_request_target'. See https://sisaku-security.github.io/lint/docs/rules/untrustedcheckout/ for more details [untrusted-checkout]
+script/actions/advisory/GHSA-ghm2-rq8q-wrhc-vulnerable.yaml:23:16: checking out untrusted code from pull request in workflow with privileged trigger 'pull_request_target' (line 10). This allows potentially malicious code from external contributors to execute with access to repository secrets. Use 'pull_request' trigger instead, or avoid checking out PR code when using 'pull_request_target'. See https://gh-intel.github.io/lint/docs/rules/untrustedcheckout/ for more details [untrusted-checkout]
 ```
 
 ### Analysis
