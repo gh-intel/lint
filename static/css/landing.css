@@ -50,6 +50,7 @@ body.sk-landing::before {
 }
 .sk-nav-inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
@@ -63,8 +64,7 @@ body.sk-landing::before {
   gap: 12px;
   color: var(--sk-text);
   text-decoration: none;
-  min-width: 0;
-  flex: 1 1 auto;
+  flex: 1 1 0;
 }
 .sk-brand-dot {
   width: 8px; height: 8px;
@@ -76,7 +76,6 @@ body.sk-landing::before {
 .sk-brand-text {
   display: flex;
   flex-direction: column;
-  min-width: 0;
   line-height: 1.15;
 }
 .sk-brand-name {
@@ -100,7 +99,8 @@ body.sk-landing::before {
 }
 .sk-nav-links {
   display: flex;
-  gap: 28px;
+  flex-wrap: wrap;
+  gap: 12px 28px;
   align-items: center;
 }
 .sk-nav-links a {
@@ -117,6 +117,7 @@ body.sk-landing::before {
   background: var(--sk-bg-elev);
   font-family: var(--sk-font-mono);
   font-size: 13px;
+  white-space: nowrap;
   color: var(--sk-text) !important;
 }
 .sk-nav-cta:hover {
